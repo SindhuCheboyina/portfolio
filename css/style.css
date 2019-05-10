@@ -1,0 +1,155 @@
+.store {
+  padding: 2%;
+  margin: 2%;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#foot {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+
+#icon {
+  border-radius: 30%;
+  width: 50%;
+}
+
+#icon .imgicon {
+  width: 20%;
+  border-radius: 50%;
+}
+
+#name #des {
+  padding-left: 90px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+#name #hone {
+  padding-left: 60px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#image {
+  margin-top: 2%;
+  width: 100%;
+  height: min-content;
+}
+
+.details {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.data {
+  width: 32%;
+}
+
+.pic {
+  width: 100%;
+  box-shadow: 5px 5px 5px #83a70b;
+}
+
+.para {
+  text-align: center;
+}
+
+/*------- Media queries-------- */
+/* mobile view */
+@media screen and (min-width:320px) and (max-width:480px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #icon {
+    width: 100%;
+  }
+
+  #icon .imgicon {
+    width: 30%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #name {
+    width: 100%;
+  }
+
+  #name #des {
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .details {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .data {
+    width: 100%;
+  }
+}
+
+/* Tab View */
+@media only screen and (min-width:481px) and (max-width:780px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #icon {
+    width: 100%;
+  }
+
+  #icon .imgicon {
+    width: 30%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #name {
+    width: 100%;
+  }
+
+  #name #des {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #name #hone {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .details {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .data {
+    width: 40%;
+    font-size: 25px;
+  }
+}
